@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(131, 127, 127);
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    background-color: rgb(46, 43, 43);
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 {
+    color: white;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header label {
+    color: white;
+}
+
+header form {
+    margin: 0 0.5rem;
+}
+
+.monthsMenu {
+    height: 75px;
+    background-color: rgb(131, 127, 127);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+
+}
+/* Partie design des select option */
+
+select {
+    background-color: rgb(232, 236, 233);
+}
+
+option{
+    margin: 1em 0;
+}
+
+
+/* Navigation entre les mois */
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+
+/* --------------------Section tableau-------------------- */
+
+table {
+    width: 100vw;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-spacing: 0;
+    background-color: #333333;
+    color: white;
+}
+
+
+
+th {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 14.285%;
+}
+
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 14.285%;
+    height: 100px;
+    vertical-align: initial;
+}
+
+td:hover {
+    background-color: #4b4949;
+    cursor: pointer;
+}
+
+td span {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+
+
+
+.weekend {
+    color: rgb(42, 218, 95);
+}
+
+.emptyBox {
+    color: grey;
+}
+
+.changeDisplayButton {
+    color: white;
+    font-size: 2em;
+}
+.actualDay{
+    background: #333333;
+    border-bottom: 2px solid rgb(179, 9, 9);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 45px;
+}
+
+.importantDay {
+    color: #305df1;
+    font-size: 1rem;
+}
+
+select {
+    background-color: #cac5c5;
+    padding: 0.5em 0;
+}
+option:hover {
+    background-color: red;
+}
+
+
+.short {
+    display: none;
+}
+
+
+/* Responsive  */
+@media screen and (max-width:600px) {
+    .large {
+        display: none;
+
+    }
+
+    .short {
+        display: block;
+    }
+
+}
+@media screen and (max-width:600px) {
+    
+td span {
+    font-size: 1rem;
+}
+}
+
+.startHolidaysB{
+    width: 85%;
+    margin-left: 20%;
+    border-radius: 15px 0 0 15px;
+}
+.holidaysB {
+    background-color: rgb(63, 178, 231);
+    height: 15px;
+    
+}
+.endHolidaysB{
+    border-radius: 0 15px 15px 0;
+    width: 85%;
+}
+.fullHolidaysB {
+    width: 110%;
+}
+
+.startHolidaysA{
+    width: 85%;
+    margin-left: 20%;
+    border-radius: 15px 0 0 15px;
+}
+.holidaysA {
+    background-color: rgb(231, 63, 63);
+    height: 15px;
+    margin-top: 10px;
+}
+.endHolidaysA{
+    border-radius: 0 15px 15px 0;
+    width: 85%;
+}
+.fullHolidaysA {
+    width: 110%;
+}
